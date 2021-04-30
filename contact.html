@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Capstone Project Contact page 1</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!--Include Your Style Sheets next -->
+    <link rel="stylesheet" href="css/capstone.css"> 
+
+    <script src ="js/capstone.js"></script>
+   
+</head>
+
+<body onload="setDate()">
+  
+<header>
+    <h1>Capstone Project Contact Us page</h1>
+    <h2> Hello. Who's There?</h2>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="http://bee-key.github.io/bee-hive/">Becky's Web of Whimsy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Magical Music</a></li>
+        <li><a href="moons3.html">Moons and Beyond</a></li> 
+        <li><a href="contact.html">Contact Us</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="contact.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="flex-container">
+    <div>
+    <img src = "images/hokeypokey.jpg" alt="Hokey Pokey Anonymous" title="Where You turn yourself about">
+    </div>
+  
+  <div>
+  <form>
+   <fieldset>
+    <legend>Information:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Me"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Myself"><br><br>
+    
+    <label>Email address:
+  	<input type="email" id="email_addr" name="email1" value = "Irene@me.com" required></label><br>
+    <label>Confirm email address:
+  	<input type="email" id="email_repeat" name="email2" required onchange="return check();"></label><br>
+    </fieldset><br><br>
+    <!-- <input type = 'submit' value = "Verify Email" onclick = "return check();"> -->
+    
+    
+    <fieldset>
+        <legend>I want to receive: </legend>
+	<div>
+		<input type="checkbox" name="newsletter" id="check_1">
+        <label for="check_1">The weekly Whimsy</label><br>
+        <input type="checkbox" name="spam_whimsy" id="check_2">
+        <label for="check_2">Whimsy Spam emails</label><br>
+        <input type="checkbox" name="stranger_spam" id="check_3">
+        <label for="check_3">Spam emails from Strangers</label><br>
+	</div>
+    </fieldset>
+    <input type = "submit" value = "Please Contact Me!" onclick = "return contact_me();"/><br><br>
+  </form>  
+  </div> 
+</div>
+
+<footer> <p>MemeMe City....
+ <p> As of <span id = "date"></span> this page is still a work in progress!</p>
+</footer>
+</body>
+</html>

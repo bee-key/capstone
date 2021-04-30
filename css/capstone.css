@@ -1,0 +1,132 @@
+/* Capstone Project CSS  xs and sm viewport styling */
+body {
+	min-height: 100vh;
+    background-color : #ffffff; /* white */
+}
+
+footer{
+	background-color:#00f8ff; /* neon blue */
+    background-color: #ea006f; /* angry pink */
+	background-color: #ffc0cb; /* lite pink */
+    text-align: center;
+}
+
+header {
+    color: #ffc0cb;
+    text-align: center;
+	padding-bottom: 2rem;
+   /* background-image: url("../images/bird_flu.jpg"); */
+   /*  background-repeat: repeat; */
+    height: 25%;
+}
+/* styling for the contact us page */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1e90ff; /* dodger blue */
+  background-color : #ffffff; /* white for xs vwport */
+}
+
+.flex-container > div {
+  background-color: #f1f1f1; /* grey shade */
+  width: 45%;
+  margin: auto 0;
+  text-align: center;
+}
+
+/* styling for the planet photo carousel moon3.html */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%
+    margin : auto;      /* center the photo */
+}
+
+.pimg {
+    width : 1500px;     /* already responsive to viewport changes. no need for media queries */
+    height : 1500px;
+}
+
+/* doing a background change to demo resp. design */
+@media only screen and (min-width:600px) {
+body {
+	min-height: 100vh;
+    background-color : #1e90ff; /* dodger blue */
+}
+
+footer{
+	background-color:#00f8ff; /* neon blue */
+    background-color: #ffc0cb; /* lite pink */
+    background-color: #ea006f; /* angry pink */
+	text-align: center;
+}
+
+header {
+    color: #ffc0cb;
+    text-align: center;
+	padding-bottom: 2rem;
+    background-image: url("../images/bird_flu.jpg");
+    background-repeat: repeat;
+    height: 25%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1e90ff; /* dodger blue */
+}
+
+}  /* end of media query */
+
+nav{
+    font-variant: small-caps;
+	font-family: Arial, "Times New Roman", serif;
+	font-size: 150%; 
+    background: #666666;
+	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#666666 0%, #ea006f 100%);
+	background: -o-linear-gradient(#666666 0%, #ea006f 100%);
+	background: linear-gradient(#666666 0%, #ea006f 100%); 
+}
+nav a{
+    font-family: Arial;
+    font-variant : small-caps;
+}
+
+h1 {
+    font-family :Arial;
+    color: #1e90ff; /* dodger blue */
+    color : #00f8ff; /* electric blue */
+    font: bold;
+} 
+form {
+    border : 2px solid #ea006f;
+    padding : 5px;
+   
+}
+input{
+	border:1px solid #000000;
+}
+input:focus{
+	background-color: #E6E6E6;
+}
+fieldset{
+	margin : 1% 2% 4%;
+}
+
+/* figure{
+    border: 1rem dotted black;
+    align: center;
+    width: 50%;
+    display : block;
+    margin: 0 auto;
+}
+figcaption {
+    text-align:center;
+    width :100%;
+} Couldn't get the border to surround the lunar eclipse image */
+
+
+
+
+
+
